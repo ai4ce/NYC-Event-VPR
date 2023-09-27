@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Event-based Visual Place Recognition Dataset">
+  <meta name="keywords" content="VPR, Event Camera">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NYC-Event-VPR</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script> -->
+  <link rel="icon" type="image/png" href="./static/images/ai4ce.png"> 
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/airlab.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://scholar.google.com/citations?hl=en&user=WOBQbwQAAAAJ">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">NYC-Event-VPR&nbsp;&nbsp;</h1>
+          <h1 class="title is-2 publication-title">A Large-Scale High-Resolution Event-Based Visual Place Recognition Dataset in Dense Urban Environments</h1>
+          <div class="column is-full_width">
+            <h2 class="title is-4">Submitted to ICRA 2024</h2>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="http://www.taiyipan.org/">Taiyi Pan</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://joechencc.github.io">Chao Chen</a><sup>1</sup></span><sup>*</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=i_aajNoAAAAJ">Yiming Li</a><sup>1</sup><sup>*</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=YeG8ZM0AAAAJ">Chen Feng</a><sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>New York University, Brooklyn, NY 11201, USA</span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>*</sup>Equal contributions</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <!-- <span class="link-block">
+                <a href="https://arxiv.org/abs/2208.09315"                    
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span> -->
+              <!-- <span class="link-block">
+                <a href="https://arxiv.org/abs/2208.09315"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span> -->
+              <!-- <span class="link-block">
+               <a href=""                    
+                  class="external-link button is-normal is-rounded is-dark">
+                 <span class="icon">
+                     <i class="fas fa-camera"></i>
+                 </span>
+                 <span>Appendix</span>
+               </a>
+             </span> -->
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/ai4ce/NYC-Event-VPR"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <!-- <span class="link-block">
+                <a href="https://drive.google.com/drive/u/0/folders/1ErXzIx0je5aGSRFbo5jP7oR8gPrdersO"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span> -->
+                </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!-- <video id="teaser" controls loop height="100%">
+        <source src="./static/video/Multimedia.mp4"
+                type="video/mp4">
+      </video> -->
+      <iframe src="https://www.youtube.com/watch?v=hB8DkfqB15I" frameborder="0"></iframe>
+      <!-- <img class="rounded" src="./media/nice-slam/teaser.png" > -->
+      <br><br><br>
+      <h2 class="subtitle has-text-centered">
+      Dataset visualization
+    </h2>
+    <!-- <h2 class="subtitle has-text-centered">
+      (The <span style="color:#000000;">black</span> / <span style="color:#ff0000;">red</span> lines are the ground truth / predicted camera trajectory)
+    </h2> -->    
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!-- <video id="teaser" autoplay muted loop height="100%">
+        <source src="./static/images/SUBT_video.mp4"
+                type="video/mp4">
+      </video> -->
+      <img src="./static/images/front_page_showcase.jpg" height="300">
+      <!-- <img class="rounded" src="./media/nice-slam/teaser.png" > -->
+      <br><br><br>
+      <h2 class="subtitle has-text-centered">
+        Downtown Manhattan in event frame, reconstructed frame, and RGB frame.
+    </h2>
+    
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>Visual place recognition (VPR) enables au-
+            tonomous robots to identify previously visited locations, which
+            contributes to tasks like simultaneous localization and mapping
+            (SLAM). VPR faces challenges such as accurate image neighbor
+            retrieval and appearance change in scenery.</p>
+          <p>Event cameras, also
+            known as dynamic vision sensors, are a new sensor modality
+            for VPR and offer a promising solution to the challenges
+            with their unique attributes: high temporal resolution (1MHz
+            clock), ultra-low latency (in μs), and high dynamic range
+            (>120dB). These attributes make event cameras less susceptible
+            to motion blur and more robust in variable lighting conditions,
+            making them suitable for addressing VPR challenges. However,
+            the scarcity of event-based VPR datasets, partly due to the
+            novelty and cost of event cameras, hampers their adoption.</p>
+          <p>To fill this data gap, our paper introduces the NYC-Event-
+            VPR dataset to the robotics and computer vision communities,
+            featuring the Prophesee IMX636 HD event sensor (1280x720
+            resolution), combined with RGB camera and GPS module. It
+            encompasses over 13 hours of geotagged event data, spanning
+            260+ kilometers across New York City, covering diverse lighting
+            and weather conditions, day/night scenarios, and multiple visits
+            to various locations.</p>
+          <p>Furthermore, our paper employs the
+            VPR-Bench framework to conduct generalization performance
+            assessments, promoting innovation in event-based VPR and its
+            integration into robotics applications.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{Pan2024arxiv,
+      author    = {Pan, Taiyi and Chen, Chao and Li, Yiming and Feng, Chen},
+      title     = {NYC-Event-VPR: A Large-Scale High-Resolution Event-Based Visual Place Recognition Dataset in Dense Urban Environments},
+      journal = {arXiv:2208.09315},
+      year      = {2024}
+  }</code></pre>
+  </div>
+</section> -->
+
+<section class="section" id="Acknowledgements">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Acknowledgements</h2>
+    Chen Feng is the corresponding author (cfeng@nyu.edu). This work is supported by NSF Grant 2238968.
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+            This webpage template is from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>. 
+            We sincerely thank <a href="https://keunhong.com/">Keunhong Park</a> for developing and open-sourcing this template.
+          </p>
+        </div>
+      </div>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
