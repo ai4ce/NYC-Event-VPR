@@ -176,7 +176,7 @@
         <source src="./static/video/Multimedia.mp4"
                 type="video/mp4">
       </video> -->
-      <iframe height="500" src="https://www.youtube.com/embed/hB8DkfqB15I" frameborder="0"></iframe>
+      <iframe width="640" height="480" src="https://www.youtube.com/embed/hB8DkfqB15I" frameborder="0"></iframe>
       <!-- <img class="rounded" src="./media/nice-slam/teaser.png" > -->
       <br><br><br>
       <h2 class="subtitle has-text-centered">
@@ -213,11 +213,11 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p>Visual place recognition (VPR) enables autonomous robots to identify previously visited locations, which
+          <p><strong>Visual place recognition (VPR)</strong> enables autonomous robots to identify previously visited locations, which
             contributes to tasks like simultaneous localization and mapping
             (SLAM). VPR faces challenges such as accurate image neighbor
             retrieval and appearance change in scenery.</p>
-          <p>Event cameras, also
+          <p><strong>Event cameras</strong>, also
             known as dynamic vision sensors, are a new sensor modality
             for VPR and offer a promising solution to the challenges
             with their unique attributes: high temporal resolution (1MHz
@@ -227,7 +227,7 @@
             making them suitable for addressing VPR challenges. However,
             the scarcity of event-based VPR datasets, partly due to the
             novelty and cost of event cameras, hampers their adoption.</p>
-          <p>To fill this data gap, our paper introduces the NYC-Event-VPR dataset to the robotics and computer vision communities,
+          <p>To fill this data gap, our paper introduces the <strong>NYC-Event-VPR dataset</strong> to the robotics and computer vision communities,
             featuring the Prophesee IMX636 HD event sensor (1280x720
             resolution), combined with RGB camera and GPS module. It
             encompasses over 13 hours of geotagged event data, spanning
@@ -258,6 +258,27 @@
             NYC-Event-VPR covers New York City, focusing on Chinatown area in Manhattan with overlapping traversal.
           </p>
         </div>
+        <img src="./static/images/sensor_specs.jpg" height="300" class="center"/>
+        <div class="content has-text-justified">
+          <br>  
+          <p>
+            Our sensor suite: (a) Prophesee EVK4 HD Event Camera, (b) ELP USB Camera, (c) Insta360 vibration damper, (d) Sparkfun GPS-RTK-SMA GPS module.
+          </p>
+        </div>
+        <img src="./static/images/sensor_setup.jpg" height="400" class="center"/>
+        <div class="content has-text-justified">
+          <br>  
+          <p>
+            Sensor setup and mounting design: RGB camera is mounted on top of event camera, and the sensor suite is positioned facing forward behind vehicle`s front windshield.
+          </p>
+        </div>
+        <img src="./static/images/report.png" height="600" class="center"/>
+        <div class="content has-text-justified">
+          <br>  
+          <p>
+            Example images in processed dataset (from left to right columns): naive conversion, E2VID reconstruction, RGB reference. Each row is the same visual scene. Each column is the same dataset.
+          </p>
+        </div>
       </div>
     </div>
     <hr>
@@ -271,7 +292,7 @@
         <hr>
         <h2 class="title is-3">Benchmark</h2>
         <br>
-        <table>
+        <table style="width:100%">
           <tr><th>Datasets</th><th>NetVLAD</th><th>RegionVLAD</th><th>HOG</th><th>AMOSNet</th><th>HybridNet</th><th>CALC</th></tr>
           <tr><td>NYC-Event-VPR-Naive-5m</td><td>32.53</td><td>24.85</td><td>25.13</td><td>65.76</td><td>68.69</td><td>74.17</td></tr>
           <tr><td>NYC-Event-VPR-Naive-2m</td><td>25.68</td><td>20.35</td><td>21.02</td><td>57.74</td><td>61.84</td><td>66.87</td></tr>
@@ -288,7 +309,7 @@
             Quantitative results of Area Under the Curve- Precision Recall (AUC-PR) in percentage.
           </p>
           <p>
-            Top 6 rows are from NYC-Event-VPR. Each row represents a set of 6 benchmark tests on that dataset. Bottom 2 rows are curated subsets of their respective datasets provided by VPR-Bench. All tests are done using pretrained weights provided by VPR-Bench.
+            Top 6 datasets are from NYC-Event-VPR. Each row represents a set of 6 benchmark tests on that dataset. Bottom 2 datasets are curated subsets of their respective datasets provided by VPR-Bench. All tests are done using pretrained weights provided by VPR-Bench.
           </p>
         </div>
       </div>
