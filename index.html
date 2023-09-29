@@ -72,7 +72,7 @@
           <h1 class="title is-1 publication-title">NYC-Event-VPR&nbsp;&nbsp;</h1>
           <h1 class="title is-2 publication-title">A Large-Scale High-Resolution Event-Based Visual Place Recognition Dataset in Dense Urban Environments</h1>
           <div class="column is-full_width">
-            <h2 class="title is-4">Submitted to ICRA 2024</h2>
+            <h2 class="title is-4">Submitted to <a href="https://2024.ieee-icra.org/index.html">ICRA 2024</a></h2>
           </div>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
@@ -221,8 +221,7 @@
             making them suitable for addressing VPR challenges. However,
             the scarcity of event-based VPR datasets, partly due to the
             novelty and cost of event cameras, hampers their adoption.</p>
-          <p>To fill this data gap, our paper introduces the NYC-Event-
-            VPR dataset to the robotics and computer vision communities,
+          <p>To fill this data gap, our paper introduces the NYC-Event-VPR dataset to the robotics and computer vision communities,
             featuring the Prophesee IMX636 HD event sensor (1280x720
             resolution), combined with RGB camera and GPS module. It
             encompasses over 13 hours of geotagged event data, spanning
@@ -246,7 +245,37 @@
         <hr>
         <h2 class="title is-3">Dataset</h2>
         <br>
-        <img src="./static/images/total_gps_coverage.png" class="center"/>
+        <img src="./static/images/total_gps_coverage.png" height="1200" class="center"/>
+        <div class="content has-text-justified">
+          <br>  
+          <p>
+          </p>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full_width">
+        <hr>
+        <h2 class="title is-3">Benchmark</h2>
+        <br>
+        <h2>VPR-Bench results with pretrained weights</h2>
+        <table>
+          <tr><th>Datasets</th><th>NetVLAD</th><th>RegionVLAD</th><th>HOG</th><th>AMOSNet</th><th>HybridNet</th><th>CALC</th></tr>
+          <tr><td>NYC-Event-VPR-Naive-5m</td></tr>
+          <tr><td>NYC-Event-VPR-Naive-2m</td></tr>
+          <tr><td>NYC-Event-VPR-E2VID-5m</td></tr>
+          <tr><td>NYC-Event-VPR-E2VID-2m</td></tr>
+          <tr><td>NYC-Event-VPR-RGB-5m</td></tr>
+          <tr><td>NYC-Event-VPR-RGB-2m</td></tr>
+          <tr><td>Pittsburgh250K</td></tr>
+          <tr><td>Nordland</td></tr>
+        </table>
         <div class="content has-text-justified">
           <br>  
           <p>
