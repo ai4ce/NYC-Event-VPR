@@ -176,7 +176,7 @@
         <source src="./static/video/Multimedia.mp4"
                 type="video/mp4">
       </video> -->
-      <iframe width="640" height="480" src="https://www.youtube.com/embed/hB8DkfqB15I" frameborder="0"></iframe>
+      <iframe height="500" src="https://www.youtube.com/embed/hB8DkfqB15I" frameborder="0"></iframe>
       <!-- <img class="rounded" src="./media/nice-slam/teaser.png" > -->
       <br><br><br>
       <h2 class="subtitle has-text-centered">
@@ -255,6 +255,7 @@
         <div class="content has-text-justified">
           <br>  
           <p>
+            NYC-Event-VPR covers New York City, focusing on Chinatown area in Manhattan with overlapping traversal.
           </p>
         </div>
       </div>
@@ -270,21 +271,24 @@
         <hr>
         <h2 class="title is-3">Benchmark</h2>
         <br>
-        <h2>VPR-Bench results with pretrained weights</h2>
         <table>
           <tr><th>Datasets</th><th>NetVLAD</th><th>RegionVLAD</th><th>HOG</th><th>AMOSNet</th><th>HybridNet</th><th>CALC</th></tr>
-          <tr><td>NYC-Event-VPR-Naive-5m</td></tr>
-          <tr><td>NYC-Event-VPR-Naive-2m</td></tr>
-          <tr><td>NYC-Event-VPR-E2VID-5m</td></tr>
-          <tr><td>NYC-Event-VPR-E2VID-2m</td></tr>
-          <tr><td>NYC-Event-VPR-RGB-5m</td></tr>
-          <tr><td>NYC-Event-VPR-RGB-2m</td></tr>
-          <tr><td>Pittsburgh250K</td></tr>
-          <tr><td>Nordland</td></tr>
+          <tr><td>NYC-Event-VPR-Naive-5m</td><td>32.53</td><td>24.85</td><td>25.13</td><td>65.76</td><td>68.69</td><td>74.17</td></tr>
+          <tr><td>NYC-Event-VPR-Naive-2m</td><td>25.68</td><td>20.35</td><td>21.02</td><td>57.74</td><td>61.84</td><td>66.87</td></tr>
+          <tr><td>NYC-Event-VPR-E2VID-5m</td><td>74.06</td><td>77.56</td><td>86.03</td><td>86.22</td><td>85.51</td><td>84.69</td></tr>
+          <tr><td>NYC-Event-VPR-E2VID-2m</td><td>68.08</td><td>73.44</td><td>83.84</td><td>82.99</td><td>82.12</td><td>81.05</td></tr>
+          <tr><td>NYC-Event-VPR-RGB-5m</td><td>92.52</td><td>92.58</td><td>92.43</td><td>94.52</td><td>94.33</td><td>92.86</td></tr>
+          <tr><td>NYC-Event-VPR-RGB-2m</td><td>88.34</td><td>89.94</td><td>91.48</td><td>91.82</td><td>92.36</td><td>90.16</td></tr>
+          <tr><td>Pittsburgh250K</td><td>94.36</td><td>73.34</td><td>0.27</td><td>8.53</td><td>8.70</td><td>2.05</td></tr>
+          <tr><td>Nordland</td><td>8.49</td><td>13.33</td><td>2.89</td><td>30.13</td><td>17.52</td><td>12.91</td></tr>
         </table>
         <div class="content has-text-justified">
           <br>  
           <p>
+            Quantitative results of Area Under the Curve- Precision Recall (AUC-PR) in percentage.
+          </p>
+          <p>
+            Top 6 rows are from NYC-Event-VPR. Each row represents a set of 6 benchmark tests on that dataset. Bottom 2 rows are curated subsets of their respective datasets provided by VPR-Bench. All tests are done using pretrained weights provided by VPR-Bench.
           </p>
         </div>
       </div>
