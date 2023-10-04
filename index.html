@@ -365,7 +365,38 @@
             Quantitative results of Area Under the Curve- Precision Recall (AUC-PR) in percentage.
           </p>
           <p>
-            Top 6 datasets are from NYC-Event-VPR. Each row represents a set of 6 benchmark tests on that dataset. Bottom 2 datasets are curated subsets of their respective datasets provided by VPR-Bench. All tests are done using pretrained weights provided by VPR-Bench.
+            Top 6 datasets are from NYC-Event-VPR. Each row represents a set of 6 benchmark tests on that dataset. Bottom 2 datasets are curated subsets of their respective datasets provided by VPR-Bench. All tests are done using pretrained weights provided by <a href="https://github.com/MubarizZaffar/VPR-Bench">VPR-Bench</a>.
+          </p>
+        </div>
+        <br>
+        <table style="width:100%">
+          <tr><th>CCT384+NetVLAD</th><th>Naive-5m</th><th>E2VID-5m</th><th>RGB-5m</th><th>Naive-25m</th><th>E2VID-25m</th><th>RGB-25m</th></tr>
+          <tr><th>Recall@1</th><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><th>Recall@5</th><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><th>Recall@10</th><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><th>Recall@20</th><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        </table>
+        <br>
+        <table style="width:100%">
+          <tr><th>ResNet50+NetVLAD</th><th>Naive-5m</th><th>E2VID-5m</th><th>RGB-5m</th><th>Naive-25m</th><th>E2VID-25m</th><th>RGB-25m</th></tr>
+          <tr><th>Recall@1</th><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><th>Recall@5</th><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><th>Recall@10</th><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><th>Recall@20</th><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        </table>
+        <div class="content has-text-justified">
+          <br>  
+          <p>
+            Quantitative results of recall@k in percentage.
+          </p>
+          <p>
+            First table is test results of deep learning model trained on NYC-Event-VPR. Backbone is CCT384 (<a href="https://arxiv.org/abs/2104.05704">Compact Convolutional Transformer</a>). Aggregation is done via <a href="https://openaccess.thecvf.com/content_cvpr_2016/html/Arandjelovic_NetVLAD_CNN_Architecture_CVPR_2016_paper.html">NetVLAD</a>. 
+          </p>
+          <p>
+            Second table is also test results of deep learning model trained on NYC-Event-VPR. Backbone is ResNet50 (<a href="https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html">Residual Network</a>). Aggregation is done via <a href="https://openaccess.thecvf.com/content_cvpr_2016/html/Arandjelovic_NetVLAD_CNN_Architecture_CVPR_2016_paper.html">NetVLAD</a>.  
+          </p>
+          <p>
+             All benchmarks are done by training the model on NYC-Event-VPR dataset using <a href="https://github.com/gmberton/deep-visual-geo-localization-benchmark">Deep Visual Geo-localization Benchmark</a> framework.
           </p>
         </div>
       </div>
