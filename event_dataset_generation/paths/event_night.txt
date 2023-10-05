@@ -1,0 +1,17 @@
+/mnt/scratch2/NYU-EventVPR_rendered_30fps/data_2022-12-06_18-27-24/event_2022-12-06_18-27-24.avi
+/mnt/scratch2/NYU-EventVPR_rendered_30fps/data_2022-12-06_19-28-02/event_2022-12-06_19-28-02.avi
+/mnt/scratch2/NYU-EventVPR_rendered_30fps/data_2022-12-06_20-45-57/event_2022-12-06_20-45-57.avi
+/mnt/scratch2/NYU-EventVPR_rendered_30fps/data_2022-12-07_17-58-38/event_2022-12-07_17-58-38.avi
+/mnt/scratch2/NYU-EventVPR_rendered_30fps/data_2022-12-09_18-56-16/event_2022-12-09_18-56-16.avi
+/mnt/scratch2/NYU-EventVPR_rendered_30fps/data_2022-12-09_19-42-10/event_2022-12-09_19-42-10.avi
+/mnt/scratch2/NYU-EventVPR_rendered_30fps/data_2022-12-20_16-54-14/event_2022-12-20_16-54-14.avi
+/mnt/scratch2/NYU-EventVPR_rendered_30fps/data_2023-02-14_18-20-44/event_2023-02-14_18-20-44.avi
+/mnt/scratch2/NYU-EventVPR_rendered_30fps/data_2023-02-14_18-20-44/event_2023-02-14_18-30-44.avi
+/mnt/scratch2/NYU-EventVPR_rendered_30fps/data_2023-02-14_18-20-44/event_2023-02-14_18-40-44.avi
+/mnt/scratch2/NYU-EventVPR_rendered_30fps/data_2023-02-14_18-20-44/event_2023-02-14_18-50-44.avi
+/mnt/scratch2/NYU-EventVPR_rendered_30fps/data_2023-02-14_18-20-44/event_2023-02-14_19-00-44.avi
+/mnt/scratch2/NYU-EventVPR_rendered_30fps/data_2023-02-14_18-20-44/event_2023-02-14_19-10-44.avi
+/mnt/scratch2/NYU-EventVPR_rendered_30fps/data_2023-02-14_18-20-44/event_2023-02-14_19-20-44.avi
+/mnt/scratch2/NYU-EventVPR_rendered_30fps/data_2023-02-14_18-20-44/event_2023-02-14_19-30-44.avi
+/mnt/scratch2/NYU-EventVPR_rendered_30fps/data_2023-02-14_18-20-44/event_2023-02-14_19-40-44.avi
+/mnt/scratch2/NYU-EventVPR_rendered_30fps/data_2023-02-14_18-20-44/event_2023-02-14_19-50-44.avi

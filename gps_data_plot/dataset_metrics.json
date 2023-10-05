@@ -1,0 +1,28 @@
+{
+    "total_time": {
+        "hours": 13,
+        "minutes": 30
+    },
+    "total_distance": {
+        "kilometers": 259.95,
+        "miles_equivalent": 161.53
+    },
+    "total_size": {
+        "gigabytes": 466.7
+    },
+    "sensors": [
+        "event_camera", 
+        "rgb_camera", 
+        "gps_module"
+    ],
+    "weather": [
+        "rainy", 
+        "cloudy", 
+        "sunny"
+    ],
+    "resolution": {
+        "width": 1280, 
+        "height": 720
+    },
+    "updated": "2023-04-21"
+}
