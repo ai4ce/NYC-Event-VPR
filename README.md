@@ -4,7 +4,7 @@
 New York University, Tandon School of Engineering
 
 ## Abstract 
-![Showcase](/img/front_page_showcase.jpg)
+![showcase](./img/front_page_showcase.jpg)
 
 Visual place recognition (VPR) enables autonomous robots to identify previously visited locations, which contributes to tasks like simultaneous localization and mapping (SLAM). VPR faces challenges such as accurate image neighbor retrieval and appearance change in scenery.
 
@@ -15,8 +15,17 @@ To fill this data gap, our paper introduces the NYC-Event-VPR dataset to the rob
 Furthermore, our paper employs the VPR-Bench framework to conduct generalization performance assessments, promoting innovation in event-based VPR and its integration into robotics applications.
 
 ## Links
-Paper website: https://ai4ce.github.io/NYC-Event-VPR/      
-Dataset repository: https://huggingface.co/datasets/ai4ce/NYC-Event-VPR
+Dataset repository: https://huggingface.co/datasets/ai4ce/NYC-Event-VPR      
+Paper website: https://ai4ce.github.io/NYC-Event-VPR/         
+
+## Dataset 
+![coverage](./img/total_gps_coverage.png)      
+Total coverage over New York City     
+![visualization](./img/report.png)      
+Visualizations     
+![sensors](./img/sensor_specs.jpg)       
+![sensors2](./img/sensor_setup.jpg)       
+Sensors 
 
 ## Instructions
 
