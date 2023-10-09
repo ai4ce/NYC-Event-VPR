@@ -219,8 +219,15 @@ NYC-Event-VPR
 - tqdm 
 - kornia 
 
-Install Metavision SDK: https://docs.prophesee.ai/stable/installation/index.html
-Install VPR-Bench: https://github.com/MubarizZaffar/VPR-Bench
-Install Visual Geo-Localization: https://github.com/gmberton/deep-visual-geo-localization-benchmark
-
 ### How to use dataset 
+Download repository 
+```
+git clone https://github.com/ai4ce/NYC-Event-VPR.git
+```
+Install packages 
+```
+pip install -r requirements.txt
+```
+Install Metavision SDK: https://docs.prophesee.ai/stable/installation/index.html      
+Install VPR-Bench: https://github.com/MubarizZaffar/VPR-Bench     
+Install Visual Geo-Localization: https://github.com/gmberton/deep-visual-geo-localization-benchmark
