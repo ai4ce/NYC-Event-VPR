@@ -15,10 +15,40 @@ Furthermore, our paper employs the VPR-Bench framework to conduct generalization
 ## Links
 Paper website: https://ai4ce.github.io/NYC-Event-VPR/
 Dataset repository: https://huggingface.co/datasets/ai4ce/NYC-Event-VPR
-VPR-Bench framework: https://github.com/MubarizZaffar/VPR-Bench
-Visual Geo-localization framework: https://github.com/gmberton/deep-visual-geo-localization-benchmark
 
-## Dataset Structure 
+## Note
+
+### Prerequisites
+- python 3 
+- pandas 
+- opencv-python 
+- pickle 
+- geopy 
+- numpy 
+- utm 
+- matplotlib 
+- descartes 
+- geopandas 
+- shapely 
+- torch
+- torchvision
+- tqdm 
+- kornia 
+
+### How to use dataset 
+Download repository 
+```
+git clone https://github.com/ai4ce/NYC-Event-VPR.git
+```
+Install packages 
+```
+pip install -r requirements.txt
+```
+Install Metavision SDK: https://docs.prophesee.ai/stable/installation/index.html      
+Install VPR-Bench: https://github.com/MubarizZaffar/VPR-Bench     
+Install Visual Geo-Localization: https://github.com/gmberton/deep-visual-geo-localization-benchmark
+
+### Dataset Structure 
 ```
 NYC-Event-VPR
 |
@@ -199,35 +229,3 @@ NYC-Event-VPR
         ├── query.zip
         └── ref.zip    
 ```
-
-## Note
-
-### Prerequisites
-- python 3 
-- pandas 
-- opencv-python 
-- pickle 
-- geopy 
-- numpy 
-- utm 
-- matplotlib 
-- descartes 
-- geopandas 
-- shapely 
-- torch
-- torchvision
-- tqdm 
-- kornia 
-
-### How to use dataset 
-Download repository 
-```
-git clone https://github.com/ai4ce/NYC-Event-VPR.git
-```
-Install packages 
-```
-pip install -r requirements.txt
-```
-Install Metavision SDK: https://docs.prophesee.ai/stable/installation/index.html      
-Install VPR-Bench: https://github.com/MubarizZaffar/VPR-Bench     
-Install Visual Geo-Localization: https://github.com/gmberton/deep-visual-geo-localization-benchmark
