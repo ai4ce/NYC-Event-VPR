@@ -19,12 +19,15 @@ Dataset repository: https://huggingface.co/datasets/ai4ce/NYC-Event-VPR
 Paper website: https://ai4ce.github.io/NYC-Event-VPR/
 
 ## Dataset 
+### Coverage 
 ![coverage](./img/total_gps_coverage.png)      
 Total coverage over New York City     
 
+### Visualization 
 ![visualization](./img/report.png)      
 Visualizations (left column: naively rendered; middle column: E2VID reconstructed; right column: RGB images)     
 
+### Sensors 
 ![sensors](./img/sensor_specs.jpg)             
 Sensors (a: Prophesee EVK4 HD event camera, b: ELP RGB camera, c: Insta360 vibration damper, d: Sparkfun RTK-GPS-SMA breakout board)      
 
