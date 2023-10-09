@@ -4,6 +4,8 @@
 New York University, Tandon School of Engineering
 
 ## Abstract 
+![Showcase](/img/front_page_showcase.jpg)
+
 Visual place recognition (VPR) enables autonomous robots to identify previously visited locations, which contributes to tasks like simultaneous localization and mapping (SLAM). VPR faces challenges such as accurate image neighbor retrieval and appearance change in scenery.
 
 Event cameras, also known as dynamic vision sensors, are a new sensor modality for VPR and offer a promising solution to the challenges with their unique attributes: high temporal resolution (1MHz clock), ultra-low latency (in μs), and high dynamic range (>120dB). These attributes make event cameras less susceptible to motion blur and more robust in variable lighting conditions, making them suitable for addressing VPR challenges. However, the scarcity of event-based VPR datasets, partly due to the novelty and cost of event cameras, hampers their adoption.
@@ -13,10 +15,10 @@ To fill this data gap, our paper introduces the NYC-Event-VPR dataset to the rob
 Furthermore, our paper employs the VPR-Bench framework to conduct generalization performance assessments, promoting innovation in event-based VPR and its integration into robotics applications.
 
 ## Links
-Paper website: https://ai4ce.github.io/NYC-Event-VPR/
+Paper website: https://ai4ce.github.io/NYC-Event-VPR/      
 Dataset repository: https://huggingface.co/datasets/ai4ce/NYC-Event-VPR
 
-## Note
+## Instructions
 
 ### Prerequisites
 - python 3 
@@ -35,20 +37,37 @@ Dataset repository: https://huggingface.co/datasets/ai4ce/NYC-Event-VPR
 - tqdm 
 - kornia 
 
-### How to use dataset 
-Download repository 
-```
-git clone https://github.com/ai4ce/NYC-Event-VPR.git
-```
-Install packages 
-```
-pip install -r requirements.txt
-```
-Install Metavision SDK: https://docs.prophesee.ai/stable/installation/index.html      
-Install VPR-Bench: https://github.com/MubarizZaffar/VPR-Bench     
-Install Visual Geo-Localization: https://github.com/gmberton/deep-visual-geo-localization-benchmark
+### Installation
+1. Install Metavision SDK: https://docs.prophesee.ai/stable/installation/index.html   
+   (Optional: only if working directly with raw sensor readings)         
 
-### Dataset Structure 
+2. Download repository 
+    ```
+    git clone https://github.com/ai4ce/NYC-Event-VPR.git
+    ```
+3. Install packages 
+    ```
+    pip install -r requirements.txt
+    ```    
+4. Install VPR-Bench: https://github.com/MubarizZaffar/VPR-Bench     
+   (Optional: only if evaluating datasets with NYC-Event-VPR_VPR-Bench)      
+
+5. Install Visual Geo-Localization: https://github.com/gmberton/deep-visual-geo-localization-benchmark      
+   (Optional: only if training and evaluating datasets with NYC-Event-VPR_VG)
+
+### Note 
+NYC-Event-VPR_raw_data: Raw sensor readings collected in NYC. Contains raw event files, GPS coordinates and timestamps, and RGB images.      
+
+NYC-Event-VPR_VG: preformatted datasets compatible with Visual Geo-localization framework.       
+
+NYC-Event-VPR_VPR-Bench: preformatted datasets compatible with VPR-Bench.    
+
+### Citation 
+```bibtex
+
+```
+
+### Dataset structure 
 ```
 NYC-Event-VPR
 |
