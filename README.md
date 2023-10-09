@@ -16,16 +16,17 @@ Furthermore, our paper employs the VPR-Bench framework to conduct generalization
 
 ## Links
 Dataset repository: https://huggingface.co/datasets/ai4ce/NYC-Event-VPR      
-Paper website: https://ai4ce.github.io/NYC-Event-VPR/         
+Paper website: https://ai4ce.github.io/NYC-Event-VPR/
 
 ## Dataset 
 ![coverage](./img/total_gps_coverage.png)      
 Total coverage over New York City     
+
 ![visualization](./img/report.png)      
-Visualizations     
-![sensors](./img/sensor_specs.jpg)       
-![sensors2](./img/sensor_setup.jpg)       
-Sensors 
+Visualizations (left column: naively rendered; middle column: E2VID reconstructed; right column: RGB images)     
+
+![sensors](./img/sensor_specs.jpg)             
+Sensors (a: Prophesee EVK4 HD event camera, b: ELP RGB camera, c: Insta360 vibration damper, d: Sparkfun RTK-GPS-SMA breakout board)      
 
 ## Instructions
 
