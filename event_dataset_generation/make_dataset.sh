@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # define hyperparams
-fault_tolerance=25
+fault_tolerance=15
 sobel_threshold=0
 sample_fps=1
-type="event" # choices: event, reconstructed
+type="event" # choices: event, reconstructed, rgb
 light="null" # choices: day, night, null
 
 #############################################################################################################################################
@@ -35,6 +35,19 @@ elif [ $type = "reconstructed" ]; then
         readarray -t a < paths/reconstructed_night.txt 
         files="${a[@]}"
         output=/home/taiyi/scratch/NYU-EventVPR_VPR-Bench/reconstructed_"$fault_tolerance"m_"$sobel_threshold"sobel_"$sample_fps"fps_night
+    fi 
+elif [ $type = "rgb" ]; then 
+    event=/home/taiyi/scratch/rgb_concatenated/30fps
+    output=/home/taiyi/scratch/NYU-EventVPR_VPR-Bench/rgb_"$fault_tolerance"m_"$sobel_threshold"sobel_"$sample_fps"fps
+    files="/mnt/scratch2/NYU-EventVPR_rgb_30fps/data_*/event_*.mp4"
+    if [ $light = "day" ]; then 
+        readarray -t a < paths/rgb_day.txt
+        files="${a[@]}"
+        output=/home/taiyi/scratch/NYU-EventVPR_VPR-Bench/rgb_"$fault_tolerance"m_"$sobel_threshold"sobel_"$sample_fps"fps_day
+    elif [ $light = "night" ]; then 
+        readarray -t a < paths/rgb_night.txt 
+        files="${a[@]}"
+        output=/home/taiyi/scratch/NYU-EventVPR_VPR-Bench/rgb_"$fault_tolerance"m_"$sobel_threshold"sobel_"$sample_fps"fps_night
     fi 
 fi
 ##############################################################################################################################################
