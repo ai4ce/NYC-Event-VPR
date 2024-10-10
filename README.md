@@ -1,5 +1,5 @@
 # NYC-Event-VPR: A Large-Scale High-Resolution Event-Based Visual Place Recognition Dataset in Dense Urban Environments 
-[Taiyi Pan](http://www.taiyipan.org), [Chao Chen*](https://joechencc.github.io), [Yiming Li*](https://scholar.google.com/citations?user=i_aajNoAAAAJ), [Chen Feng](https://scholar.google.com/citations?user=YeG8ZM0AAAAJ)
+[Taiyi Pan](http://www.taiyipan.org), [Junyang He], [Chao Chen*](https://joechencc.github.io), [Yiming Li*](https://scholar.google.com/citations?user=i_aajNoAAAAJ), [Chen Feng](https://scholar.google.com/citations?user=YeG8ZM0AAAAJ)
 
 New York University, Tandon School of Engineering
 
@@ -20,7 +20,7 @@ Paper website: https://ai4ce.github.io/NYC-Event-VPR/
 
 ## Dataset 
 ### Coverage 
-![coverage](./img/total_gps_coverage.png)      
+![coverage](./img/gps_plot.png)      
 Total coverage over New York City     
 
 ### Visualization 
