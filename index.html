@@ -84,7 +84,7 @@
             <span class="author-block">
               <a href="http://www.taiyipan.org/">Taiyi Pan</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://www.linkedin.com/in/junyang-he/">Junyang He</a><sup>1</sup>,</span>
+              <a href="https://www.linkedin.com/in/junyang-he/">Junyang He</a><sup>2</sup>,</span>
             <span class="author-block">
               <a href="https://joechencc.github.io">Chao Chen</a><sup>1</sup></span><sup>*</sup>,</span>
             <span class="author-block">
@@ -97,6 +97,7 @@
 
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>New York University, Brooklyn, NY 11201, USA</span>
+            <span class="author-block"><sup>2</sup>University of Virginia, Charlottesville, VA 22904, USA</span>
           </div>
           <!-- <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>*</sup>Equal contributions</span>
@@ -236,10 +237,10 @@
             260+ kilometers across New York City, covering diverse lighting
             and weather conditions, day/night scenarios, and multiple visits
             to various locations.</p>
-          <p>Furthermore, our paper employs the
-            VPR-Bench framework to conduct generalization performance
-            assessments, promoting innovation in event-based VPR and its
-            integration into robotics applications.</p>
+          <p>Furthermore, our paper employs three frameworks
+            to conduct generalization performance assessments, promoting
+            innovation in event-based VPR and its integration into robotics
+            applications.</p>
         </div>
       </div>
     </div>
@@ -330,7 +331,7 @@
           </p>
         </div>
         <br>
-        <img src="./static/images/report.png" style="object-fit: contain; height: 500px;" class="center"/>
+        <img src="./static/images/sample_images.png" style="object-fit: contain; height: 500px;" class="center"/>
         <div class="content has-text-justified">
           <br>  
           <p>
@@ -352,12 +353,15 @@
         <br>
         <table style="width:100%">
           <tr><th>Datasets</th><th>NetVLAD</th><th>RegionVLAD</th><th>HOG</th><th>AMOSNet</th><th>HybridNet</th><th>CALC</th></tr>
-          <tr><td>NYC-Event-VPR-Naive-5m</td><td>32.53</td><td>24.85</td><td>25.13</td><td>65.76</td><td>68.69</td><td>74.17</td></tr>
-          <tr><td>NYC-Event-VPR-Naive-2m</td><td>25.68</td><td>20.35</td><td>21.02</td><td>57.74</td><td>61.84</td><td>66.87</td></tr>
+          <tr><td>NYC-Event-VPR-Naive-5m</td><td>34.24</td><td>26.41</td><td>25.31</td><td>67.62</td><td>69.65</td><td>74.78</td></tr>
+          <tr><td>NYC-Event-VPR-Naive-15m</td><td>40.53</td><td>29.84</td><td>32.14</td><td>73.09</td><td>75.09</td><td>81.55</td></tr>
+          <tr><td>NYC-Event-VPR-Naive-25m</td><td>40.52</td><td>31.15</td><td>32.75</td><td>73.25</td><td>74.66</td><td>80.76</td></tr>
           <tr><td>NYC-Event-VPR-E2VID-5m</td><td>74.06</td><td>77.56</td><td>86.03</td><td>86.22</td><td>85.51</td><td>84.69</td></tr>
-          <tr><td>NYC-Event-VPR-E2VID-2m</td><td>68.08</td><td>73.44</td><td>83.84</td><td>82.99</td><td>82.12</td><td>81.05</td></tr>
+          <tr><td>NYC-Event-VPR-E2VID-15m</td><td>84.92</td><td>89.15</td><td>95.89</td><td>97.16</td><td>96.87</td><td>96.09</td></tr>
+          <tr><td>NYC-Event-VPR-E2VID-25m</td><td>87.01</td><td>89.64</td><td>98.88</td><td>99.53</td><td>99.45</td><td>99.27</td></tr>
           <tr><td>NYC-Event-VPR-RGB-5m</td><td>92.52</td><td>92.58</td><td>92.43</td><td>94.52</td><td>94.33</td><td>92.86</td></tr>
-          <tr><td>NYC-Event-VPR-RGB-2m</td><td>88.34</td><td>89.94</td><td>91.48</td><td>91.82</td><td>92.36</td><td>90.16</td></tr>
+          <tr><td>NYC-Event-VPR-RGB-15m</td><td>98.14</td><td>97.12</td><td>95.20</td><td>98.26</td><td>98.26</td><td>96.85</td></tr>
+          <tr><td>NYC-Event-VPR-RGB-25m</td><td>98.63</td><td>97.88</td><td>95.94</td><td>99.31</td><td>99.29</td><td>97.95</td></tr>
           <tr><td>Pittsburgh250K</td><td>94.36</td><td>73.34</td><td>0.27</td><td>8.53</td><td>8.70</td><td>2.05</td></tr>
           <tr><td>Nordland</td><td>8.49</td><td>13.33</td><td>2.89</td><td>30.13</td><td>17.52</td><td>12.91</td></tr>
         </table>
@@ -367,7 +371,7 @@
             Quantitative results of Area Under the Curve- Precision Recall (AUC-PR) in percentage.
           </p>
           <p>
-            Top 6 datasets are from NYC-Event-VPR. Each row represents a set of 6 benchmark tests on that dataset. Bottom 2 datasets are curated subsets of their respective datasets provided by VPR-Bench. All tests are done using pretrained weights provided by <a href="https://github.com/MubarizZaffar/VPR-Bench">VPR-Bench</a>.
+            Top 9 datasets are from NYC-Event-VPR. Each row represents a set of 6 benchmark tests on that dataset. Bottom 2 datasets are curated subsets of their respective datasets provided by VPR-Bench. All tests are done using pretrained weights provided by <a href="https://github.com/MubarizZaffar/VPR-Bench">VPR-Bench</a>.
           </p>
         </div>
         <br>
@@ -399,6 +403,26 @@
           </p>
           <p>
              All benchmarks are done by training the model on NYC-Event-VPR dataset using <a href="https://github.com/gmberton/deep-visual-geo-localization-benchmark">Deep Visual Geo-localization Benchmark</a> framework.
+          </p>
+        </div>
+        <br>
+        <table style="width:100%">
+          <tr><th>ResNet50+NetVLAD</th><th>Naive-5m</th><th>E2VID-5m</th><th>RGB-5m</th><th>Naive-15m</th><th>E2VID-15m</th><th>RGB-15m</th><th>Naive-25m</th><th>E2VID-25m</th><th>RGB-25m</th></tr>
+          <tr><th>Recall@1</th><td>29.6</td><td>43.7</td><td>59.4</td><td>45.8</td><td>63.5</td><td>79.5</td><td>51.5</td><td>69.4</td><td>87.9</td></tr>
+          <tr><th>Recall@5</th><td>40.9</td><td>50.5</td><td>62.6</td><td>60.4</td><td>72.1</td><td>82.7</td><td>67.1</td><td>79.4</td><td>91.3</td></tr>
+          <tr><th>Recall@10</th><td>43.6</td><td>52.2</td><td>63.1</td><td>64.6</td><td>74.5</td><td>83.0</td><td>71.6</td><td>82.0</td><td>92.0</td></tr>
+          <tr><th>Recall@20</th><td>46.9</td><td>53.7</td><td>63.3</td><td>68.7</td><td>76.5</td><td>83.4</td><td>76.1</td><td>83.9</td><td>92.5</td></tr>
+        </table>
+        <div class="content has-text-justified">
+          <br>  
+          <p>
+            Quantitative results of recall@k in percentage.
+          </p>
+          <p>
+            All benchmarks are done by evaluating the model with <a href="https://anyloc.github.io/">AnyLoc</a> (backbone: <a href="https://arxiv.org/abs/2304.07193">DINOv2</a>) on NYC-Event-VPR dataset.
+          </p>
+          <p>
+            All benchmarks are done by evaluating the model on NYC-Event-VPR dataset using <a href="https://github.com/gmberton/VPR-methods-evaluation">VPR Methods Evaluation</a> framework.
           </p>
         </div>
       </div>
