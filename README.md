@@ -12,7 +12,7 @@ Event cameras, also known as dynamic vision sensors, are a new sensor modality f
 
 To fill this data gap, our paper introduces the NYC-Event-VPR dataset to the robotics and computer vision communities, featuring the Prophesee IMX636 HD event sensor (1280x720 resolution), combined with RGB camera and GPS module. It encompasses over 13 hours of geotagged event data, spanning 260+ kilometers across New York City, covering diverse lighting and weather conditions, day/night scenarios, and multiple visits to various locations.
 
-Furthermore, our paper employs the VPR-Bench framework to conduct generalization performance assessments, promoting innovation in event-based VPR and its integration into robotics applications.
+Furthermore, our paper employs three frameworks to conduct generalization performance assessments, promoting innovation in event-based VPR and its integration into robotics applications.
 
 ## Links
 Dataset repository: https://huggingface.co/datasets/ai4ce/NYC-Event-VPR      
@@ -24,7 +24,7 @@ Paper website: https://ai4ce.github.io/NYC-Event-VPR/
 Total coverage over New York City     
 
 ### Visualization 
-![visualization](./img/report.png)      
+![visualization](./img/sample_images.png)      
 Visualizations (left column: naively rendered; middle column: E2VID reconstructed; right column: RGB images)     
 
 ### Sensors 
@@ -67,6 +67,9 @@ Sensors (a: Prophesee EVK4 HD event camera, b: ELP RGB camera, c: Insta360 vibra
 
 5. Install Visual Geo-Localization: https://github.com/gmberton/deep-visual-geo-localization-benchmark      
    (Optional: only if training and evaluating datasets with NYC-Event-VPR_VG)
+
+6. Install VPR Methods Evaluation: https://github.com/gmberton/VPR-methods-evaluation
+   (Optional: only if evaluating datasets with NYC-Event-VPR_VG)
 
 ### Note 
 NYC-Event-VPR_raw_data: Raw sensor readings collected in NYC. Contains raw event files, GPS coordinates and timestamps, and RGB images.      
